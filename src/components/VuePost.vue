@@ -17,13 +17,13 @@ const { comments, getComments, loading } = useComments();
 getComments(props.post.id);
 
 function addPost(comment) {
-  comments.value.push(comment)
+  comments.value.push(comment);
 }
 </script>
 
 <template>
   <div class="post">
-    <h2 class="post__title">{{ post.title }} - {{ post.id }}</h2>
+    <h2 class="post__title">{{ post.title }}</h2>
     <p class="post__body">
       {{ post.body }}
     </p>
